@@ -1,0 +1,75 @@
+1) Parmi les variables suivantes quelles sont les déclarations incorrectes et pourquoi ?
+
+tet
+
+
+2) Nombre
+	a) Déclarer une variable 'x' et lui assigner un nbr positif
+	b) Déclarer une variable 'y' et lui assigner un nbr négatif
+	c) Déclarer une variable 'moy', et lui assigner la moyenne de x et y
+	d) assigner à présent à moy, la moyenne de x, y et moy
+
+3) String
+	a) Déclarer une variable bjr contenant "Bonjour"
+	b) Concaténer la variable bjr avec le string "le monde", séparé d'un espace
+	c) Déclarer une variable str1 contenant "Ceci est une quote : '"
+	d) Déclarer une variable str2 contenant "Ceci est une double quote ""
+	e) Déclarer une variable str3 contenant "Ceci est une quote suivie d'une double quote '""
+	f) Déclarer une variable contenant un anti-slash "\"
+	
+4)	a) Déclarer les variables suivantes :
+		* nbr qui contient le nombre 200
+		* texte qui contient le string 200
+		* decimal qui contient le nombre 2,5
+		* bool qui contient le booléen false
+	b) ajouter 1 à nbr de 3 manières différentes
+	c) concaténer texte avec le string ' est une chaîne de caractères'
+	d) inverser la valeur de bool
+	e) ajouter à decimal la valeur contenue dans nbr
+	f) afficher dans la console le résultat de nbr + texte, puis de texte + nbr. Comment interpréter les résultats ?
+	g) recommencer la question f, en utilisant parseInt(texte) au lieu de texte. Que réalise la fonction parseInt ?
+	h) recommencer la question f, mais en faisant une multiplication au lieu d'une addition.  Comment interpréter les résultats ?
+	i) Que peut-on retenir des opérations sur des variables de types différents ?
+
+
+5) Boolean - Anticiper les résultats des opérateurs booléens suivants :
+	a) true && false 
+	b) false || true
+	c) false && true || true
+	d) false && (true || true)
+	e) !true || false
+	f) '5' === 5
+	g) '5' == (2+3)
+	h) 3 != 3 && 0 < 100
+	i) 3 != '3' && 0 < 100
+	j) 3 !== '3' && 0 < 100
+	k) ! ( false || ! (5>=-1))
+	l) Bonus : Comment écrire simplement !(!a && !b), où a et b sont 2 booléens 
+	
+6) Tableau (Array)
+	a) Déclarer un tableau contenant des couleurs (sous forme de string ; ex 'Bleu' ; minimum 3 couleurs)
+	b) Afficher dans la console le nombre d'éléments du tableau
+	c) Afficher le premier élément du tableau
+	d) Afficher le dernier élément
+	e) Changer le 2è élément par une nouvelle couleur
+	f) Ajouter une couleur à la liste
+	g) Echanger le 1er élément avec le dernier
+	
+7) Objet
+	a) Créer une variable voiture contenant un Objet avec les propriétés suivantes :
+		- un modèle (string)
+		- une couleur (string)
+		- le kilométrage (un nombre entier)
+		- si elle est électrique (boolean)
+		- si elle est thermique (boolean)
+		- la liste des dates des contrôles techniques ex: 12/01/2016, 12/01/2018, 12/01/2020
+	b) Afficher dans la console le modèle
+	c) Ajouter 100 au kilométrage
+	d) créer une variable hybride qui est doit être vraie si la voiture est thermique et électrique
+	e) créer une propriété à l'objet voiture 'hybride' et lui assigner la variable de la question d)
+	f) récupérer la date du dernier contrôle technique
+	g) ajouter une date à la liste
+
+
+
+
