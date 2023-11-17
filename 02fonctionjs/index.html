@@ -4,12 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Les Fonctions Java Script</title>
+    <script src="./js/script.js" defer></script>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        color-scheme: var(--colorMode);
+    }
+
+    :root:has(#color-mode:not(:checked)) {
+        --colorMode: normal;
+    }
+
+    :root:has(#color-mode:checked) {
+        --colorMode: dark;
+    }
+</style>
 
 <body>
     <h1>Les Fonctions JS </h1>
-    <script src="./js/script.js" defer></script>
+
+    <div id="mode">
+        <label for="color">Dark Mode :</label>
+        <input type="checkbox" name="color" id="color-mode">
+    </div>
 </body>
 
 </html>
