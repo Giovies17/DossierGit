@@ -154,7 +154,7 @@ var d = 4,
 //}
 //console.log(rate())
 
-function average2(nb1, nb2=0, nb3=0) {
+function average2(nb1, nb2 = 0, nb3 = 0) {
   if (typeof (nb1, nb2, nb3) == "number") {
     return (nb1 + nb2 + nb3) / 3;
   } else {
@@ -164,19 +164,45 @@ function average2(nb1, nb2=0, nb3=0) {
 console.log("------------------------------");
 console.log(average2(10, 20, 30));
 console.log(average2(10));
-console.log(average2('10'));
+console.log(average2("10"));
 console.log(average2("goal"));
 console.log(average2(10, 20, "titi"));
 
 // REST parameters. Basés sur le spread d'un tableau.
 
-function sum(...args){
+function sum(...args) {
   let total = 0;
   for (const arg of args) {
     total += arg;
-  } 
-return total;
-
+  }
+  return total;
 }
-console.log('Fonction SUM spredée', sum(1, 2, 3)); // Expected : 6
-console.log('Fonction SUM spredée', sum(1, 2, 3, 4)); // Expected : 10
+console.log("Fonction SUM spredée", sum(1, 2, 3)); // Expected : 6
+console.log("Fonction SUM spredée", sum(1, 2, 3, 4)); // Expected : 10
+
+//Faire une fct qui prend N parametres et retourne la moy
+// exercice /// merdique//
+//function inconnu(tab) {
+// let resultat = N;
+////  for (con of tab) {
+//    total += tab;
+// }
+// console.log("Rest Average", inconnu(N));
+//}
+
+function restAverage(...myArgs) {
+  const nbArg = myArgs.length;
+  let moy = 0;
+  for (const arg of myArgs) {
+    moy += arg;
+  }
+  return moy / nbArg;
+}
+console.log("Rest Average", restAverage(10, 20, 15));
+// Expected output: 15
+
+console.log("Rest Average", restAverage(10, 20, 15, 35));
+// Expected output: 20
+
+console.log("Rest Average", restAverage(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+// Expected output: 5.5
